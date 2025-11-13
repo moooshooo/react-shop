@@ -7,4 +7,16 @@ export type Product = {
   image: string 
 };
 
-export type ProductList = ProductList[];
+export type ProductList = Product[];
+
+/* 
+export type ProductF = {
+  id: number 
+  name: string 
+  description: string 
+  price: number 
+  category: string 
+  options: primary_options{
+
+  }
+}; */

@@ -8,18 +8,23 @@ body{
   font-size: 12px;
 }
 .product-list{
-  border: 1px solid #eee;
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
-  width: 90%;
+  flex-direction: row;
+  width: 100%;
   flex-wrap: wrap;
   gap: 20px;
 }
 .product-container{
-  width: 200px;
+  width: 160px;
   height: 400px;
+  background-color: #222;
+  padding: 20px;
+}
+.product-name {
+  font-size: 1.3em;
+text-align: center;
 }
 .product-img{
   width: 150px;
@@ -30,9 +35,16 @@ body{
 }
 .product-price{
   font-size: 2em;
+text-align: right;
 }
-.product-description{}
-.prodct-category{}
+.product-description{
+  font-size: 0.8em;
+}
+.product-category{
+  font-size: 0.8em;
+  font-weight: bold;
+text-align: center;
+}
 footer {
   display: flex;
   align-items: center;

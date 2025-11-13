@@ -1,21 +1,24 @@
 import { useState } from "react";
-import ListProducts from "./pages/ListProducts";
-import HeaderPart from './pages/header.tsx'
-import FooterPart from './pages/footer.tsx'
-import type { ProductList } from "./pages/declarations";
+import HeaderPart from "./pages/header.tsx";
+import ListProducts from "./hooks/ListProducts.tsx";
+import FilterProducts from "./hooks/FilterProducts.tsx";
+import FooterPart from "./pages/footer.tsx";
+import type { ProductList } from "./declarations";
+
+console.log("Powered by: Mos\n===============");
 
 function App() {
-      const [product, setProduct] = useState<ProductList[]>([])
+  const [product, setProduct] = useState<ProductList[]>([]);
 
   return (
     <>
-        <HeaderPart />
+      <HeaderPart />
       <main id="product-listing">
-       
+        <FilterProducts product={product} setProduct={setProduct} />
         <ListProducts product={product} setProduct={setProduct} />
       </main>
 
-        <FooterPart />
+      <FooterPart />
     </>
   );
 }
