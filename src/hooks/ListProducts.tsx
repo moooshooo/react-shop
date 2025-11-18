@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import type { ProductList } from "../pages/declarations";
+import type { ProductList } from "../types/product";
 
-const API_URL = "http://10.100.3.140:3000/products";
+const API_URL = "https://api.leetcode.se/sample-products";
 /* const API_URL = "https://api.futureplayground.se/products"
  */
 console.log("Powered by: Mos\n===============");
@@ -32,7 +32,7 @@ const ListProducts = ({
           <div key={p.id} className="product-container">
             <div className="product-name-container">
               <p className="product-name">{p.name}</p>
-              <p className="product-category">{p.name}</p>
+              <p className="product-category">{p.category}</p>
             </div>
             <div className="product-img-holder">
               <img className="product-img" src={p.image} alt={p.name} />

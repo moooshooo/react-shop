@@ -8,15 +8,3 @@ export type Product = {
 };
 
 export type ProductList = Product[];
-
-/* 
-export type ProductF = {
-  id: number 
-  name: string 
-  description: string 
-  price: number 
-  category: string 
-  options: primary_options{
-
-  }
-}; */
