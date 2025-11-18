@@ -1,30 +1,6 @@
-import { useEffect } from "react";
 import type { ProductList } from "../types/product";
 
-const API_URL = "https://api.leetcode.se/sample-products";
-/* const API_URL = "https://api.futureplayground.se/products"
- */
-console.log("Powered by: Mos\n===============");
-
-const ListProducts = ({
-  product,
-  setProduct,
-}: {
-  product: ProductList;
-  setProduct: ProductList;
-}) => {
-  useEffect(() => {
-    async function getProducts() {
-      const getTheData = await fetch(API_URL);
-      const parsedData = await getTheData.json();
-
-      setProduct(parsedData);
-
-      console.log("Products loaded");
-    }
-    getProducts();
-  }, []);
-
+const ListProducts = ({ product }: { product: ProductList }) => {
   return (
     <>
       <div className="product-list">

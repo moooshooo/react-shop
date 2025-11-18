@@ -1,6 +1,5 @@
-
-import Footer from "./components/layout/footer.tsx";
-import Header from "./components/layout/header.tsx";
+import Footer from "./components/layout/Footer.tsx";
+import Header from "./components/layout/Header.tsx";
 import AppRoutes from "./routes/AppRoutes.tsx";
 
 console.log("Powered by: Mos\n===============");

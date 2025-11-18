@@ -1,12 +1,6 @@
-import type { Product, ProductList } from "../types/product";
+import type { ProductList } from "../types/product";
 
-const FilterProducts = ({
-  product
-  
-}: {
-  product: ProductList;
-  setProduct: ProductList;
-}) => {
+const FilterProducts = ({ product }: { product: ProductList }) => {
   return (
     <>
       {product.slice(0, 12).map((p) => (

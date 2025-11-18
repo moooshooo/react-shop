@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-import About from "../pages/about";
 import Shop from "../pages/Shop";
-import ShippingInfo from "../pages/shippinginfo";
+import ShippingInfo from "../pages/ShippingInfo";
+import About from "../pages/About";
 
 const AppRoutes = () => {
   return (
